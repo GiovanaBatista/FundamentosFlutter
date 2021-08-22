@@ -35,10 +35,10 @@ class ListaTransferenciasStates extends State<ListaTransferencias> {
             return FormularioTransferencia();
           }));
           future.then((transferenciaRecebida) {
-            //Future.delayed(Duration(seconds: 2), () {
+            //Future.delayed(Duration(seconds: 2), () {});
+
             _atualiza(transferenciaRecebida!);
           });
-          //});
         },
         child: Icon(Icons.add),
       ),
